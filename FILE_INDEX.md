@@ -1,6 +1,6 @@
-# 📑 Complete File Index & Reference
+# Complete File Index & Reference
 
-## 🎯 START HERE
+## START HERE
 
 Read these **in order** for a complete understanding:
 
@@ -11,9 +11,9 @@ Read these **in order** for a complete understanding:
 
 ---
 
-## 📂 File Organization
+## File Organization
 
-### 🧠 Core Model Components (6 files)
+### Core Model Components (6 files)
 
 These implement the transformer architecture:
 
@@ -41,7 +41,7 @@ GPTModel
 
 ---
 
-### 📦 Data Pipeline (3 files)
+### Data Pipeline (3 files)
 
 Handles text loading, tokenization, and batching:
 
@@ -68,7 +68,7 @@ DataLoader (shuffle + iterate)
 
 ---
 
-### 🏋️ Training & Inference (2 files)
+### Training & Inference (2 files)
 
 Complete pipelines for training and generation:
 
@@ -109,7 +109,7 @@ generate_gpt.py
 
 ---
 
-### 🧪 Testing Suite (4 files)
+### Testing Suite (4 files)
 
 Comprehensive unit and integration tests:
 
@@ -130,7 +130,7 @@ python test_GPTModel.py
 
 ---
 
-### 📚 Documentation (4 files)
+### Documentation (4 files)
 
 Everything you need to understand and use the code:
 
@@ -143,7 +143,7 @@ Everything you need to understand and use the code:
 
 ---
 
-## 🚀 How to Use These Files
+## How to Use These Files
 
 ### Scenario 1: "I want to understand the architecture"
 1. Read: **README.md** (5 min)
@@ -178,33 +178,33 @@ Everything you need to understand and use the code:
 
 ---
 
-## 📊 Component Dependencies
+## Component Dependencies
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                      train_gpt.py                           │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  ┌──────────────────────────────────────────────────────┐ │
-│  │ TextCorpusDataset → CharTokenizer + CSV file         │ │
-│  └──────────────────────────────────────────────────────┘ │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │ TextCorpusDataset → CharTokenizer + CSV file         │   │
+│  └──────────────────────────────────────────────────────┘   │
 │                           ↓                                 │
-│  ┌──────────────────────────────────────────────────────┐ │
-│  │ GPTModel: Forward & Backward                         │ │
-│  │  ├── Embedding (token + pos)                         │ │
-│  │  ├── TransformerBlock ×N                             │ │
-│  │  │   ├── LayerNorm                                   │ │
-│  │  │   ├── CausalSelfAttention                         │ │
-│  │  │   │   ├── W_q, W_k, W_v, W_o (Linear)            │ │
-│  │  │   │   └── Causal mask                             │ │
-│  │  │   └── FeedForward (Linear→ReLU→Linear)            │ │
-│  │  ├── LayerNorm                                        │ │
-│  │  └── Linear (LM head)                                 │ │
-│  └──────────────────────────────────────────────────────┘ │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │ GPTModel: Forward & Backward                         │   │
+│  │  ├── Embedding (token + pos)                         │   │
+│  │  ├── TransformerBlock ×N                             │   │
+│  │  │   ├── LayerNorm                                   │   │
+│  │  │   ├── CausalSelfAttention                         │   │
+│  │  │   │   ├── W_q, W_k, W_v, W_o (Linear)             │   │
+│  │  │   │   └── Causal mask                             │   │
+│  │  │   └── FeedForward (Linear→ReLU→Linear)            │   │
+│  │  ├── LayerNorm                                       │   │
+│  │  └── Linear (LM head)                                │   │
+│  └──────────────────────────────────────────────────────┘   │
 │                           ↓                                 │
-│  ┌──────────────────────────────────────────────────────┐ │
-│  │ CrossEntropyLoss + RMSprop Optimizer                 │ │
-│  └──────────────────────────────────────────────────────┘ │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │ CrossEntropyLoss + RMSprop Optimizer                 │   │
+│  └──────────────────────────────────────────────────────┘   │
 │                           ↓                                 │
 │         Save weights → gpt_weights.pkl                      │
 └─────────────────────────────────────────────────────────────┘
@@ -215,16 +215,16 @@ Everything you need to understand and use the code:
 │                    generate_gpt.py                          │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  ┌──────────────────────────────────────────────────────┐ │
-│  │ Load gpt_weights.pkl → GPTModel.load_weights()      │ │
-│  └──────────────────────────────────────────────────────┘ │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │ Load gpt_weights.pkl → GPTModel.load_weights()       │   │
+│  └──────────────────────────────────────────────────────┘   │
 │                           ↓                                 │
-│  ┌──────────────────────────────────────────────────────┐ │
-│  │ Autoregressive Loop: model.generate()                │ │
-│  │  ├── Forward pass → logits                           │ │
-│  │  ├── Softmax + Temperature sampling                  │ │
-│  │  └── Append token + repeat                           │ │
-│  └──────────────────────────────────────────────────────┘ │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │ Autoregressive Loop: model.generate()                │   │
+│  │  ├── Forward pass → logits                           │   │
+│  │  ├── Softmax + Temperature sampling                  │   │
+│  │  └── Append token + repeat                           │   │
+│  └──────────────────────────────────────────────────────┘   │
 │                           ↓                                 │
 │         CharTokenizer.decode() → Text                       │
 └─────────────────────────────────────────────────────────────┘
@@ -232,7 +232,7 @@ Everything you need to understand and use the code:
 
 ---
 
-## 📋 Class Hierarchy
+## Class Hierarchy
 
 ```
 Module (from mini_torch)
@@ -266,7 +266,7 @@ Optimizer (from mini_torch)
 
 ---
 
-## 🎓 Educational Value
+## Educational Value
 
 This codebase teaches:
 
@@ -301,7 +301,7 @@ This codebase teaches:
 
 ---
 
-## 📖 Reading Order (by Learning Level)
+## Reading Order (by Learning Level)
 
 ### Beginner (Understanding)
 1. README.md (architecture overview)
@@ -323,7 +323,7 @@ This codebase teaches:
 
 ---
 
-## ✅ Verification Checklist
+## Verification Checklist
 
 Before submission, verify:
 
@@ -339,7 +339,7 @@ Before submission, verify:
 
 ---
 
-## 🔗 External References
+## External References
 
 ### Papers
 - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
@@ -357,7 +357,7 @@ Before submission, verify:
 
 ---
 
-## 📞 Quick Reference
+## Quick Reference
 
 **Want to train?**
 ```bash
@@ -395,17 +395,12 @@ python test_GPTModel.py
 
 ---
 
-## 🎉 You Now Have Everything!
+## You Now Have Everything!
 
-✅ Complete, tested implementation  
-✅ Training pipeline  
-✅ Generation pipeline  
-✅ Comprehensive documentation  
-✅ Experimental framework  
-✅ Report templates  
+Complete, tested implementation  
+Training pipeline  
+Generation pipeline  
+Comprehensive documentation  
+Experimental framework  
+Report templates  
 
-**Ready to ace this assignment!** 🚀
-
----
-
-*Last Updated: June 5, 2026*
