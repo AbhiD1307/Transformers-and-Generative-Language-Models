@@ -1,34 +1,34 @@
-# 🎉 CSS 590 Assignment - COMPLETE ✅
+# CSS 590 Assignment - COMPLETE 
 
 ## Completion Summary
 
-**All files for the CSS 590 Generative AI Transformer assignment have been successfully implemented, tested, and documented.**
+**All files for the CSS 590 Generative AI Transformer assignment have been successfully implemented, tested and documented.**
 
 ---
 
-## 📦 Deliverables (18 Files)
+## Deliverables (18 Files)
 
-### Core Implementation (6 files) ✅
+### Core Implementation (6 files)
 
 1. **`Embedding.py`** (50 lines)
    - Token & positional embeddings lookup table
    - Forward: Advanced indexing `weight[indices]`
    - Backward: Scatter-add gradient accumulation for duplicates
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
 2. **`CausalSelfAttention.py`** (198 lines)
    - Multi-head scaled dot-product attention
    - **Causal masking**: Upper triangular -∞ prevents future attending
    - Numerically stable softmax
    - Complete manual backpropagation
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
 3. **`TransformerBlock.py`** (120 lines)
    - Pre-LayerNorm architecture (LN → module → residual)
    - Skip connections for gradient flow
    - Combines attention, FFN, and layer norm
    - Correct gradient routing at branch points
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
 4. **`GPTModel.py`** (190 lines)
    - Top-level assembly of all components
@@ -36,41 +36,41 @@
    - Sequential stack of transformer blocks
    - Final layer norm + linear head
    - **Autoregressive generation** with temperature control
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
 5. **`LayerNorm.py`** (110 lines)
    - Feature normalization (mean=0, var=1)
    - Learnable scale (γ) and shift (β)
    - Complete backpropagation
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
 6. **`FeedForward.py`** (60 lines)
    - 4× expansion MLP
    - Linear → ReLU → Linear
    - Integrates with Sequential container
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
-### Data Pipeline (3 files) ✅
+### Data Pipeline (3 files) 
 
 7. **`CharTokenizer.py`** (50 lines)
    - Character ↔ integer encoding/decoding
    - Vocabulary extraction from corpus
    - Simple, efficient implementation
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
 8. **`TextCorpusDataset.py`** (65 lines)
    - Sliding-window dataset for autoregressive training
    - Loads corpus, tokenizes, returns (x, y) pairs
    - Implements Mini-Torch Dataset interface
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
 9. **`clean_corpus.py`** (65 lines)
    - Text preprocessing utility
    - Removes special characters, keeps vocabulary small
    - Handles Project Gutenberg metadata
-   - Status: **COMPLETE** ✅
+   - Status: **COMPLETE** 
 
-### Training & Inference (2 files) ✅
+### Training & Inference (2 files) 
 
 10. **`train_gpt.py`** (100+ lines)
     - Full training loop
@@ -78,44 +78,44 @@
     - Periodic text generation samples
     - Weight saving to checkpoint
     - Automatic GPU/CPU scaling
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
 11. **`generate_gpt.py`** (70 lines)
     - Load trained model from checkpoint
     - Autoregressive text generation
     - Temperature-controlled sampling
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
-### Testing Suite (4 files) ✅
+### Testing Suite (4 files) 
 
 12. **`test_Embedding.py`** (60 lines)
     - Shape verification
     - Gradient accumulation correctness
     - Parameter accessor tests
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
 13. **`test_CausalSelfAttention.py`** (80 lines)
     - Forward shape tests
     - **Causal masking verification**
     - Backward pass gradient tests
     - Multi-head structure validation
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
 14. **`test_TransformerBlock.py`** (80 lines)
     - Forward/backward shape tests
     - Residual connection verification
     - Parameter aggregation tests
     - Gradient flow checks
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
 15. **`test_GPTModel.py`** (100 lines)
     - Integration tests for full model
     - Generation loop validation
     - Variable sequence length handling
     - Parameter counting
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
-### Documentation (3 files) ✅
+### Documentation (3 files) 
 
 16. **`README.md`** (150 lines)
     - Architecture overview with ASCII diagrams
@@ -123,7 +123,7 @@
     - Usage guide (training, generation, testing)
     - Hyperparameter reference
     - Key implementation details
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
 17. **`IMPLEMENTATION_COMPLETE.md`** (200 lines)
     - Detailed implementation checklist
@@ -132,7 +132,7 @@
     - Common issues & solutions
     - Performance expectations
     - File dependency diagram
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
 18. **`EXPERIMENTAL_FRAMEWORK.md`** (250 lines)
     - Research question formulation guide
@@ -144,13 +144,13 @@
     - Visualization best practices
     - CRediT statement template
     - Submission checklist
-    - Status: **COMPLETE** ✅
+    - Status: **COMPLETE** 
 
 ---
 
-## ✨ Key Features Implemented
+##  Key Features Implemented
 
-### ✅ Architecture Components
+###  Architecture Components
 - [x] Multi-head self-attention with causal masking
 - [x] Scaled dot-product attention (Q @ K^T / √d)
 - [x] Pre-LayerNorm topology
@@ -158,27 +158,27 @@
 - [x] 4× expansion feedforward networks
 - [x] Token + positional embeddings
 
-### ✅ Training Infrastructure
+###  Training Infrastructure
 - [x] Autoregressive data pipeline (sliding-window)
 - [x] CrossEntropyLoss computation
 - [x] RMSprop optimization
 - [x] Checkpoint saving/loading
 - [x] GPU/CPU automatic scaling
 
-### ✅ Generation
+###  Generation
 - [x] Autoregressive token sampling
 - [x] Greedy decoding (argmax)
 - [x] Temperature-controlled sampling
 - [x] Context window cropping
 
-### ✅ Testing
+###  Testing
 - [x] Unit tests for all core modules
 - [x] Integration tests for full model
 - [x] Gradient correctness verification
 - [x] Causal masking verification
 - [x] Shape compatibility tests
 
-### ✅ Documentation
+###  Documentation
 - [x] Comprehensive README
 - [x] Implementation guide with design decisions
 - [x] Experimental framework with templates
@@ -187,20 +187,20 @@
 
 ---
 
-## 📊 Code Statistics
+## Code Statistics
 
 | Component | Lines | Status |
 |-----------|-------|--------|
-| Core Models | 650+ | ✅ Complete |
-| Data Pipeline | 180 | ✅ Complete |
-| Training/Inference | 170 | ✅ Complete |
-| Tests | 320 | ✅ Complete |
-| Documentation | 600 | ✅ Complete |
-| **TOTAL** | **1900+** | **✅ COMPLETE** |
+| Core Models | 650+ | Complete |
+| Data Pipeline | 180 | Complete |
+| Training/Inference | 170 | Complete |
+| Tests | 320 | Complete |
+| Documentation | 600 | Complete |
+| **TOTAL** | **1900+** | ** COMPLETE** |
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prepare Environment
 ```bash
@@ -231,34 +231,23 @@ python test_GPTModel.py
 
 ---
 
-## 📋 Assignment Requirements - Coverage
+## Assignment Requirements - Coverage
 
 | Requirement | Implementation | Status |
 |-----------|---|---|
-| **Embedding Module** | Lookup table with scatter-add backward | ✅ |
-| **CausalSelfAttention** | Multi-head attention + causal mask | ✅ |
-| **TransformerBlock** | Pre-LN + residuals + sub-modules | ✅ |
-| **GPTModel** | Full assembly + generation | ✅ |
-| **Data Pipeline** | TextCorpusDataset + CharTokenizer | ✅ |
-| **Training Loop** | train_gpt.py with optimization | ✅ |
-| **Generation** | generate_gpt.py + temperature sampling | ✅ |
-| **Testing** | Comprehensive test suite | ✅ |
-| **Documentation** | README + experimental framework | ✅ |
+| **Embedding Module** | Lookup table with scatter-add backward | 
+| **CausalSelfAttention** | Multi-head attention + causal mask | 
+| **TransformerBlock** | Pre-LN + residuals + sub-modules | 
+| **GPTModel** | Full assembly + generation | 
+| **Data Pipeline** | TextCorpusDataset + CharTokenizer | 
+| **Training Loop** | train_gpt.py with optimization | 
+| **Generation** | generate_gpt.py + temperature sampling | 
+| **Testing** | Comprehensive test suite | 
+| **Documentation** | README + experimental framework | 
 
 ---
 
-## 📚 What You Can Now Do
-
-1. ✅ **Train a GPT-style model** from scratch on any text corpus
-2. ✅ **Generate text** autoregressively with control over creativity
-3. ✅ **Experiment** with different hyperparameters and architectures
-4. ✅ **Verify** causal attention and gradient correctness
-5. ✅ **Understand** transformer internals (no black-box autograd)
-6. ✅ **Report** findings in professional scientific format
-
----
-
-## 🎯 Next Steps for Your Report
+## Next Steps for Your Report
 
 ### Phase 1: Run Baseline Training
 ```bash
@@ -295,7 +284,7 @@ Choose 1-2 interesting questions:
 
 ---
 
-## 💡 Suggestions for Exemplary Work
+## Suggestions for Exemplary Work
 
 ### Ideas for Research Questions:
 1. **Verify Causal Attention**: Prove attention weights are zero for future positions
@@ -322,7 +311,7 @@ Choose 1-2 interesting questions:
 
 ---
 
-## 🔍 Files at a Glance
+## Files at a Glance
 
 ```
 files (1)/
@@ -357,7 +346,7 @@ files (1)/
 
 ---
 
-## ✅ Verification Checklist
+## Verification Checklist
 
 - [x] All 6 core model classes implemented
 - [x] All support modules implemented
@@ -375,11 +364,11 @@ files (1)/
 - [x] GPU/CPU support
 - [x] Autoregressive generation loop
 
-**ALL REQUIREMENTS MET** ✅
+**ALL REQUIREMENTS MET** 
 
 ---
 
-## 🏆 Ready for Submission!
+## Ready for Submission!
 
 Your implementation is:
 - ✅ **Mathematically correct** (manual backprop verified)
@@ -391,7 +380,7 @@ Your implementation is:
 
 ---
 
-## 📞 Support Resources
+## Support Resources
 
 - **README.md**: Architecture overview and usage
 - **IMPLEMENTATION_COMPLETE.md**: Design decisions and troubleshooting
@@ -400,11 +389,3 @@ Your implementation is:
 - **Inline comments**: Detailed explanations in each file
 
 ---
-
-**🎓 You're ready to ace this assignment! Good luck with your experiments and report! 🚀**
-
----
-
-*Generated: June 5, 2026*  
-*For: CSS 590 Special Topics in Computing (Generative AI)*  
-*Assignment: Character-Level Generative Transformer Implementation*
