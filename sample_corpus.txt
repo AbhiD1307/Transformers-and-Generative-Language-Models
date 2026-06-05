@@ -1,0 +1,51 @@
+The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    The quick brown fox jumps over the lazy dog.
+    This is a simple test corpus for training a character-level transformer.
+    The model learns to predict the next character in a sequence.
+    Training on small datasets is fast and useful for testing.
+    This process repeats for multiple epochs until convergence.
+    
