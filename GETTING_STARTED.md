@@ -2,7 +2,7 @@
 
 ## What Just Happened
 
-Your GPT transformer model **successfully trained**! 🎉
+Your GPT transformer model **successfully trained**! 
 
 The output shows:
 - Dataset loaded (3,174 samples, 31-character vocabulary)
