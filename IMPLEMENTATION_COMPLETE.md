@@ -21,7 +21,7 @@ This is a complete, production-ready implementation of a character-level GPT-sty
 | `LayerNorm.py` | ✅ | Feature normalization with learnable parameters |
 | `FeedForward.py` | ✅ | 4× expansion MLP |
 
-### Data Pipeline (✅ Complete)
+### Data Pipeline (Complete)
 
 | File | Status | Purpose |
 |------|--------|---------|
@@ -29,14 +29,14 @@ This is a complete, production-ready implementation of a character-level GPT-sty
 | `TextCorpusDataset.py` | ✅ | Sliding-window dataset for autoregressive training |
 | `clean_corpus.py` | ✅ | Text preprocessing utility |
 
-### Training & Inference (✅ Complete)
+### Training & Inference (Complete)
 
 | File | Status | Purpose |
 |------|--------|---------|
 | `train_gpt.py` | ✅ | Full training loop with periodic sampling |
 | `generate_gpt.py` | ✅ | Load weights and generate text |
 
-### Testing (✅ Complete)
+### Testing (Complete)
 
 | File | Status | Purpose |
 |------|--------|---------|
