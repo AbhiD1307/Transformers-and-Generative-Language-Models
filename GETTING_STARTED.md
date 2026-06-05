@@ -1,14 +1,14 @@
-# ✅ Getting Started: Your Setup is Complete!
+# Getting Started: Your Setup is Complete!
 
 ## What Just Happened
 
 Your GPT transformer model **successfully trained**! 🎉
 
 The output shows:
-- ✅ Dataset loaded (3,174 samples, 31-character vocabulary)
-- ✅ Model initialized (22 parameters)
-- ✅ Training completed (2 epochs in 0.6 seconds!)
-- ✅ Text generation working
+- Dataset loaded (3,174 samples, 31-character vocabulary)
+- Model initialized (22 parameters)
+- Training completed (2 epochs in 0.6 seconds!)
+- Text generation working
 
 ## Your Next Steps
 
@@ -148,7 +148,7 @@ emb_dim = 64    # Smaller embedding
 
 ## Next Assignment Steps
 
-1. ✅ **Environment Setup** - DONE!
+1. **Environment Setup** - DONE!
 2. → **Prepare Corpus** - Get real training data
 3. → **Train Models** - Run experiments with different configs
 4. → **Design Experiments** - Test hypotheses about model behavior
@@ -210,9 +210,3 @@ python clean_corpus.py input.txt output.txt
 # Generate text
 python generate_gpt.py
 ```
-
----
-
-**You're all set! Start by preparing a corpus and running training.** 🚀
-
-Good luck with your CSS 590 Generative AI assignment!
