@@ -150,19 +150,19 @@ LIMITATIONS:
 
 ## Report Sections Checklist
 
-### ✅ Title & Authors
+### Title & Authors
 - [ ] Clear, descriptive title
 - [ ] All group members listed
 - [ ] Corresponding author identified (with supervision/admin role)
 
-### ✅ Introduction (10 pts)
+### Introduction (10 pts)
 - [ ] Hook: Why is this interesting?
 - [ ] Background: What are transformers? Why text generation?
 - [ ] Literature: 2-3 relevant papers cited (Vaswani et al., GPT-2, etc.)
 - [ ] Research questions clearly stated
 - [ ] Hypotheses explicitly listed
 
-### ✅ Methods (20 pts)
+### Methods (20 pts)
 - [ ] Architecture description:
   - [ ] Model size variations (emb_dim, num_layers, num_heads)
   - [ ] Parameter counts
@@ -184,7 +184,7 @@ LIMITATIONS:
   - [ ] Exact configurations for each variant
   - [ ] Why these configurations?
 
-### ✅ Results (30 pts)
+### Results (30 pts)
 - [ ] Loss curves (training + validation)
   - [ ] Formatted matplotlib plots, PDFs
   - [ ] Labeled axes with units
@@ -204,28 +204,28 @@ LIMITATIONS:
   - [ ] Token frequency analysis
   - [ ] Failure case analysis
 
-### ✅ Conclusion (10 pts)
+### Conclusion (10 pts)
 - [ ] Interpret results in light of hypotheses
 - [ ] Did hypotheses hold?
 - [ ] Explain deviations from expectations
 - [ ] Key insights learned
 - [ ] Future work directions
 
-### ✅ Limitations (2-3 pts)
+### Limitations (2-3 pts)
 - [ ] Corpus size/quality limitations
 - [ ] Model size constraints
 - [ ] Hardware limitations
 - [ ] Tokenization simplifications
 - [ ] What this model is NOT good at
 
-### ✅ Ethics & Bias (2-3 pts)
+### Ethics & Bias (2-3 pts)
 - [ ] Training data bias (does corpus have inherent bias?)
 - [ ] Generated text bias (does model perpetuate it?)
 - [ ] Environmental impact (GPU compute cost)
 - [ ] Responsible use considerations
 - [ ] Transparency about limitations
 
-### ✅ CRediT Statement (Required!)
+### CRediT Statement (Required!)
 ```
 ## CRediT Author Statement
 
@@ -329,7 +329,7 @@ for name, result in results.items():
 
 ## Visualization Best Practices
 
-### ✅ DO:
+### DO:
 - Use consistent colors across related plots
 - Include grid lines for easy reading
 - Label axes with units (Loss, Epoch, etc.)
@@ -337,7 +337,7 @@ for name, result in results.items():
 - Save plots as PDF (scalable, embedded cleanly)
 - Add figure captions below plots
 
-### ✅ DON'T:
+### DON'T:
 - Use default matplotlib colors (too pale)
 - Plot without legends
 - Have overlapping lines (use distinct line styles)
@@ -435,4 +435,4 @@ it is in the hearts of those who love.
 
 ---
 
-**You're ready to produce an exemplary report!** 📊📄
+**You're ready to produce an exemplary report!** 
