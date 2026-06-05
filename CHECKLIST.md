@@ -1,4 +1,4 @@
-# ✅ Complete Step-by-Step Checklist
+# Complete Step-by-Step Checklist
 
 Use this checklist to track your progress through the assignment.
 
@@ -422,25 +422,3 @@ If you're running low on time:
 - Code questions → See comments in the `.py` files
 
 ---
-
-## Success Criteria
-
-Your report is **excellent** when:
-
-✨ Research questions are clear and interesting  
-✨ Hypotheses are specific and testable  
-✨ Methods are reproducible in detail  
-✨ Results show clear patterns  
-✨ Conclusions interpret findings thoughtfully  
-✨ Limitations are addressed honestly  
-✨ Ethics section is substantive  
-✨ All figures are high-quality PDFs  
-✨ All code is properly formatted  
-✨ CRediT statement is complete  
-✨ Professional appearance throughout  
-
----
-
-**You've got this! 🚀✨**
-
-Print this checklist and check items off as you go!
