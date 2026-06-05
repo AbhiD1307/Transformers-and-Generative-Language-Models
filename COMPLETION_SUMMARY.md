@@ -235,15 +235,15 @@ python test_GPTModel.py
 
 | Requirement | Implementation | Status |
 |-----------|---|---|
-| **Embedding Module** | Lookup table with scatter-add backward | 
-| **CausalSelfAttention** | Multi-head attention + causal mask | 
-| **TransformerBlock** | Pre-LN + residuals + sub-modules | 
-| **GPTModel** | Full assembly + generation | 
-| **Data Pipeline** | TextCorpusDataset + CharTokenizer | 
-| **Training Loop** | train_gpt.py with optimization | 
-| **Generation** | generate_gpt.py + temperature sampling | 
-| **Testing** | Comprehensive test suite | 
-| **Documentation** | README + experimental framework | 
+| **Embedding Module** | Lookup table with scatter-add backward | ✅ |
+| **CausalSelfAttention** | Multi-head attention + causal mask | ✅ |
+| **TransformerBlock** | Pre-LN + residuals + sub-modules | ✅ |
+| **GPTModel** | Full assembly + generation | ✅ |
+| **Data Pipeline** | TextCorpusDataset + CharTokenizer | ✅ |
+| **Training Loop** | train_gpt.py with optimization | ✅ |
+| **Generation** | generate_gpt.py + temperature sampling | ✅ |
+| **Testing** | Comprehensive test suite | ✅ |
+| **Documentation** | README + experimental framework | ✅ |
 
 ---
 
