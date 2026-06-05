@@ -362,7 +362,7 @@ Use this checklist to track your progress through the assignment.
 - [ ] Create summary of experiments
 - [ ] Document any issues encountered
 
-**Status:** [ ] SUBMITTED! 🎉
+**Status:** [ ] SUBMITTED! 
 
 ---
 
