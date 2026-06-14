@@ -1,5 +1,7 @@
 # Character-Level Generative Transformer (GPT-style)
 
+**CSS 590 · Generative AI · Spring 2026 · University of Washington Bothell**
+
 A from-scratch implementation of a decoder-only transformer model for character-level text generation, built on top of the Mini-Torch framework.
 
 ## Architecture Overview
